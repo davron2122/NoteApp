@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NoteApp</string>
+    <string name="notes">Notes</string>
+    <string name="news">News</string>
+    <string name="books">Books</string>
+    <string name="profile">Profile</string>
+    <string name="add_new_note_activity" >Add Note</string>
+    <string name="note_details_title">Note Details</string>
+    <string name="book_note_details_title">Book Note Details</string>
+    <string name="add_book_note_activity">Add book note</string>
+
+</resources>

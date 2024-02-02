@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <item android:id="@+id/NewsTab"
+       android:icon="@drawable/ic_news_btn"
+       android:title="News"/>
+
+
+
+    <item
+        android:id="@+id/noteTab"
+        android:icon="@drawable/ic_notes"
+        android:title="Notes"/>
+
+    <item
+        android:id="@+id/bookTab"
+        android:icon="@drawable/ic_books"
+        android:title="Books"/>
+
+
+
+
+
+    <item
+        android:id="@+id/profileTab"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile"/>
+
+</menu>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBar"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/ic_splash"
+            android:layout_gravity="center"
+            android:id="@+id/image"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/centerPanel"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBar"
+        android:layout_marginBottom="200dp"
+        >
+
+        <EditText
+
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:padding="10dp"
+
+            android:background="@drawable/edit_btn_bg_selector"
+
+
+            />
+
+        <EditText
+            android:id="@+id/passcodeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            android:padding="10dp"
+
+            android:background="@drawable/edit_btn_bg_selector"
+
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/loginBtn"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="10dp" />
+
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/bottomleftttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#64748b"
+        android:text="or login with"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="130dp"
+
+
+
+        />
+    <TextView
+        android:id="@+id/register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="#64748b"
+        android:lineSpacingExtra="8sp"
+        android:text="Register "
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="80dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/bottomleftttext"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
